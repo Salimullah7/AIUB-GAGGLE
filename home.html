@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>AIUB Gaggle</title>
+  
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body style="height:1500px">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header" id="header-nav">
+
+                <a id="nav-logo" class="navbar-brand" href="#">AIUB Gaggle</a>
+                <a class="navbar-brand" href="#">
+                    <img id="brand-image" src="user.PNG" alt="user logo" class="dropdown-btn-img">
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+  
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="sidenav">
+                
+                <button class="dropdown-btn">Department
+                
+                    <i class="fa fa-caret-down"></i>
+                
+                </button>
+                
+                <div class="dropdown-container">
+                
+                    <a href="#">Course</a>
+                    <a href="#">Research</a>
+                
+                </div>
+                
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="faq.html">FAQ</a>
+                <a href="#contact">Sign Out</a>
+              
+            </div> 
+
+            <p>This is home page</p>
+
+        </div>
+
+    </div>
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) 
+        {
+          dropdown[i].addEventListener("click", function() 
+          {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") 
+            {
+                dropdownContent.style.display = "none";
+            }  
+            else   
+            {
+                dropdownContent.style.display = "block";
+            }
+          });
+        }
+
+    </script>
+        
+</body>
+
+</html>
