@@ -26,7 +26,10 @@
     margin-left: 80px;
 }
 
-
+.welcome-p
+{
+  font-size: 25px;
+}
 
 
  /* Fixed sidenav, full height */
